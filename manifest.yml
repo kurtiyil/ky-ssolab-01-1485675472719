@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: ky-ssolab-01
+  host: ky-ssolab-01
+  disk_quota: 1024M
+  services:
+  - Single Sign On-60
