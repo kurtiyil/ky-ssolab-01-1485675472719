@@ -90,7 +90,7 @@ app.get('/hello', function(req, res) {
 
 app.get('/failure', function(req, res) { 
              res.send('login failed'); });
-app.get(‘logout’, function(req, res) {
+app.get('/logout', function(req, res) {
           req.logout();
           res.redirect('https://' + issuer_id +
                   '/idaas/mtfim/sps/idaas/logout');
