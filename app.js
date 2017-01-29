@@ -85,7 +85,7 @@ app.get('/auth/sso/callback',function(req,res,next) {
           })(req,res,next);
         });
 
-app.get('/hello', function(req, res) { 
+app.get('/hello',ensureAuthenticated, function(req, res) { 
              res.send('Hello, '+ req.user['id']+'!'); });
 
 app.get('/failure', function(req, res) { 
